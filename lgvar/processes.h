@@ -1,4 +1,4 @@
-#ifndef PROCESSES_h
+#ifndef PROCESSES_H
 #ifndef PROCESSES_H
 
 #include <stdint.h>

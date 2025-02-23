@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "quadricroods.h"
+#include "quadraticroods.h"
 
 void test_roots(long double a, long double b, long double c){
-    QuadraticRootsResult result = findroots(a, b, c);
-    if (result.nonerealroots){
+    QadraticRoodsResult result = findroots(a, b, c);
+    if (result.norealroots){
         printf("None real roots for %.2Lf*x^2 + %.2Lf*x + %.2Lf = 0\n", a, b, c);
     }else
     {
