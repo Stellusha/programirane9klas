@@ -2,13 +2,13 @@
 
 #define COLS 4
 
-void two_masiv[int(*matrix)[COLS], int rows]
+void two_masiv(int (*matrix)[COLS], int rows)
 {
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < COLS; j++)
         {
-            printf("%5d", *(*matrix) + j);
+            printf("%5d", *(*matrix + i) + j);
         }
     }
 }
@@ -23,5 +23,5 @@ int main()
     int rows = sizeof(matrix) / sizeof(matrix[0]);
 
     printf("Matrix:\n");
-    printMatrix(matrix, rows);
+    two_masiv(matrix, rows);
 }

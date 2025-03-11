@@ -28,7 +28,7 @@ void printArray(int arr[], int size)
 {
     for (int i = 0; i < size; i++)
     {
-        printf("%d ", arr + i);
+        printf("%d ", arr[i]);
     }
 }
 
@@ -43,7 +43,5 @@ int main()
     bubblesort(arr, n);
 
     printf("Sorted array: ");
-    printArray(arr, size);
-
-    return 0;
+    printArray(arr, n);
 }

@@ -3,7 +3,7 @@
 int findString(char *str)
 {
     int size = 0;
-    for (int i = 0; (str + 1) != "\0"; i++)
+    while (*(str + i) != "\0")
     {
         size++;
     }
@@ -14,10 +14,11 @@ int main()
 {
     char str[100];
     char *ptr = &str;
-    int size = findString(ptr);
 
     printf("Enter a string: ");
     fgets(str, 100, stdin);
+
+    int size = findString(str);
 
     printf("The size of the string is: %d\n", size);
 }
